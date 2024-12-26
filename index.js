@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const { PrismaClient } = require('@prisma/client');
 
-const prisma = new PrismaClient();// Assuming you're using Prisma for DB
+const prismaClient = new PrismaClient();// Assuming you're using Prisma for DB
 
 dotenv.config();
 
