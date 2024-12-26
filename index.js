@@ -86,7 +86,7 @@ app.get("/oauth2callback", async (req, res) => {
         email,
         accessToken: tokens.access_token,
         refreshToken: tokens.refresh_token,
-        expiryDate: tokens.expiry_date,
+        expiryDate: (new Date(tokens.expiry_date)).toISOString(),
       },
     });
 
